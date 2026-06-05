@@ -16,6 +16,24 @@
 
 ---
 
+## 🌐 Live Demo — Try It Yourself!
+
+<div align="center">
+
+<img src="https://user-images.githubusercontent.com/74038190/235294007-de441046-823e-4eff-89bf-d4df52858b65.gif" width="40">
+
+[![Live Demo](https://img.shields.io/badge/🚀%20Live%20Demo-Click%20Here-238636?style=for-the-badge)](https://krithiikaa.github.io/Python-DAY-1-Learnings/)
+
+🦸 Generate your Superhero Tagline &nbsp;|&nbsp; 🎵 Generate your Tamil Song Title
+
+**No installation needed — runs directly in your browser!**
+
+<img src="https://img.shields.io/badge/Hosted%20on-GitHub%20Pages-181717?style=for-the-badge&logo=github">
+
+</div>
+
+---
+
 <img src="https://user-images.githubusercontent.com/74038190/213866269-5d00981c-7c98-46d7-8a8e-16f462f15227.gif" width="100%">
 
 ## 🦸 Project 1 — Superhero Tagline Generator
