@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Krithikaa's Python Day 1 Projects</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #0d1117;
+      color: #c9d1d9;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 40px;
+    }
+    h1 { color: #58a6ff; }
+    h2 { color: #f0883e; }
+    .card {
+      background: #161b22;
+      border: 1px solid #30363d;
+      border-radius: 12px;
+      padding: 30px;
+      margin: 20px 0;
+      width: 500px;
+    }
+    input {
+      width: 90%;
+      padding: 10px;
+      margin: 8px 0;
+      border-radius: 8px;
+      border: 1px solid #30363d;
+      background: #0d1117;
+      color: white;
+      font-size: 15px;
+    }
+    button {
+      background: #238636;
+      color: white;
+      border: none;
+      padding: 12px 25px;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 15px;
+      margin-top: 10px;
+      width: 100%;
+    }
+    button:hover { background: #2ea043; }
+    .result {
+      margin-top: 15px;
+      padding: 15px;
+      background: #0d1117;
+      border-radius: 8px;
+      border-left: 4px solid #58a6ff;
+      font-size: 16px;
+      display: none;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>🐍 Krithikaa's Python Day 1 Projects</h1>
+  <p>100 Days of Code — Angela Yu's Bootcamp ✅</p>
+
+  <!-- Superhero Generator -->
+  <div class="card">
+    <h2>🦸 Superhero Tagline Generator</h2>
+    <input type="text" id="s_name" placeholder="What's your Sweet Name?">
+    <input type="text" id="s_char" placeholder="One Character that Defines You 🤔">
+    <input type="text" id="s_area" placeholder="Area where you Grew up 🏡">
+    <button onclick="generateSuperhero()">Generate My Tagline 💥</button>
+    <div class="result" id="s_result"></div>
+  </div>
+
+  <!-- Tamil Song Generator -->
+  <div class="card">
+    <h2>🎵 Tamil Song Title Generator</h2>
+    <input type="text" id="t_name" placeholder="What's your Sweet Name?">
+    <input type="text" id="t_emotion" placeholder="Current Emotion you're going through 🤔">
+    <input type="text" id="t_place" placeholder="Your Native Place 🏡">
+    <button onclick="generateTamilSong()">Generate My Song Title 🎶</button>
+    <div class="result" id="t_result"></div>
+  </div>
+
+  <script>
+    function generateSuperhero() {
+      const name = document.getElementById("s_name").value;
+      const char = document.getElementById("s_char").value;
+      const area = document.getElementById("s_area").value;
+      if (!name || !char || !area) {
+        alert("Please fill all fields!");
+        return;
+      }
+      const result = document.getElementById("s_result");
+      result.style.display = "block";
+      result.innerHTML = `🙌 Hello ${name}!<br><br>
+      💪😎 Adaptive Superhero Tagline Could be<br>
+      <strong>'THE ${char} ${name} of ${area}!'</strong>`;
+    }
+
+    function generateTamilSong() {
+      const name = document.getElementById("t_name").value;
+      const emotion = document.getElementById("t_emotion").value;
+      const place = document.getElementById("t_place").value;
+      if (!name || !emotion || !place) {
+        alert("Please fill all fields!");
+        return;
+      }
+      const result = document.getElementById("t_result");
+      result.style.display = "block";
+      result.innerHTML = `🙌 Hello ${name}!<br><br>
+      🎶 Adaptive Tamil Song Title Could be<br>
+      <strong>'${name}'s ${emotion} in ${place}! 🌧️'</strong>`;
+    }
+  </script>
+
+</body>
+</html>
