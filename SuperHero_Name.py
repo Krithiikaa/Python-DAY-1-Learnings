@@ -1,0 +1,6 @@
+print("Welcome to the SUPERHERO TAGLINE Generator!")
+Username = input("What's your SweetName?\n")
+print("🙌Hello" + " " + Username + "!" + " Let's find out your Superhero Tagline of Yours!")
+Character = input("What's the One Characer that Defines " + Username + " Very Well 🤔?" + "\n")
+Area = input("What's the Area Name where " + Username + " Grew up on🏡?" + "\n")
+print("Adaptive Superhero Tagline Could be 'THE " + Character + " " + Username + " of " + Area + " !💪😎'")
