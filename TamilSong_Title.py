@@ -1,0 +1,6 @@
+print("Welcome to the TAMIL SONG TITLE Generator!")
+Username = input("What's your SweetName?\n")
+print("🙌Hello" + " " + Username + "!" + " Let's find out your Tamil Song Title!")
+Emotion = input("What's the Current Emotion " + Username + " Going Through 🤔?" + "\n")
+Place = input("What's " + Username + "'s Native of living 🏡?" + "\n")
+print("Adaptive Tamil Song Title Could be ' " + Username + "'s " + Emotion + " in " + Place + " !🎶'")
